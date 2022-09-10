@@ -24,8 +24,7 @@ class CardCell: UITableViewCell {
             sizeButtonOutlet.titleLabel?.isHidden = true
         }
     }
-    @IBOutlet weak var imageCart: UIImageView!
-    @IBOutlet weak var nameCart: UILabel!{
+    @IBOutlet weak var imageCart: UIImageView!{
         didSet {
             layer.shadowColor = UIColor.lightGray.cgColor
                    layer.shadowOffset = CGSize(width: 0, height: 2.0)
@@ -35,17 +34,20 @@ class CardCell: UITableViewCell {
                    layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
                    layer.backgroundColor = UIColor.clear.cgColor
             
-            nameCart.layer.cornerRadius = 10
+            imageCart.layer.cornerRadius = 20
 
             contentView.layer.masksToBounds = true
         }
     }
+    @IBOutlet weak var nameCart: UILabel!
     @IBOutlet weak var priceCart: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         
     }
 

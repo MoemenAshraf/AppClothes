@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Our Products-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="ViewController" customModule="AppClothesProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,8 +22,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxy-rP-2ou">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igf-Fa-Xwo">
+                                        <rect key="frame" x="103" y="15" width="212" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cDW-Cx-aGu">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <rect key="frame" x="0.0" y="48" width="414" height="804"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PTF-N7-cVs">
                                             <size key="itemSize" width="185" height="291"/>
@@ -100,10 +106,13 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
+                                    <constraint firstItem="Igf-Fa-Xwo" firstAttribute="leading" secondItem="Uxy-rP-2ou" secondAttribute="leading" constant="103" id="66t-Lq-PZc"/>
+                                    <constraint firstItem="Igf-Fa-Xwo" firstAttribute="top" secondItem="Uxy-rP-2ou" secondAttribute="top" constant="15" id="MTi-Hw-bG5"/>
                                     <constraint firstItem="cDW-Cx-aGu" firstAttribute="leading" secondItem="Uxy-rP-2ou" secondAttribute="leading" id="Pa6-DD-DbF"/>
                                     <constraint firstAttribute="bottom" secondItem="cDW-Cx-aGu" secondAttribute="bottom" id="XRC-rq-ovr"/>
                                     <constraint firstAttribute="trailing" secondItem="cDW-Cx-aGu" secondAttribute="trailing" id="czb-pS-AKb"/>
-                                    <constraint firstItem="cDW-Cx-aGu" firstAttribute="top" secondItem="Uxy-rP-2ou" secondAttribute="top" id="yUC-b1-oKF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Igf-Fa-Xwo" secondAttribute="trailing" constant="99" id="lQv-Ia-o1w"/>
+                                    <constraint firstItem="cDW-Cx-aGu" firstAttribute="top" secondItem="Uxy-rP-2ou" secondAttribute="top" constant="48" id="yUC-b1-oKF"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -116,16 +125,16 @@
                             <constraint firstItem="Uxy-rP-2ou" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o9i-qc-41w"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="aB8-XQ-aAm"/>
+                    <tabBarItem key="tabBarItem" title="Our Products" id="aB8-XQ-aAm"/>
                     <connections>
                         <outlet property="clothesCollectionView" destination="cDW-Cx-aGu" id="rK4-VW-Y1k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="115"/>
+            <point key="canvasLocation" x="1021.7391304347827" y="114.50892857142857"/>
         </scene>
-        <!--Item-->
+        <!--Cart-->
         <scene sceneID="3Am-RJ-1sQ">
             <objects>
                 <viewController storyboardIdentifier="CartVC" id="8w3-Eg-gUN" customClass="CartVC" customModule="AppClothesProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,7 +352,7 @@
                             <constraint firstItem="DJE-da-IfF" firstAttribute="bottom" secondItem="3jm-Ic-lg9" secondAttribute="bottom" constant="23" id="xLX-Ob-o6Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Vin-F1-h2N"/>
+                    <tabBarItem key="tabBarItem" title="Cart" id="Vin-F1-h2N"/>
                     <connections>
                         <outlet property="backButton" destination="fC0-ez-FW4" id="YeW-TX-pgj"/>
                         <outlet property="cartTable" destination="Gca-Oj-iEA" id="IDc-mV-OJy"/>
