@@ -52,6 +52,16 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
           return CGSize(width: cellWidth, height: cellHeight)
 
       }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
+        vc.imageToShow = clothes[indexPath.row].image!
+        vc.nameToShow = clothes[indexPath.row].name!
+        vc.priceToShow = clothes[indexPath.row].price!
+        
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
+    }
     
     
 }
