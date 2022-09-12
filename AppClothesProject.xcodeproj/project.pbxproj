@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882F430613367AE1CDB20A87 /* Pods_AppClothesProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5E7CAE1E5A56D107587B2E /* Pods_AppClothesProject.framework */; };
 		96548F8928CE8DB000E8436D /* SignUpLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96548F8828CE8DB000E8436D /* SignUpLogin.storyboard */; };
 		965ED88428CCCC3C00AE9E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965ED88328CCCC3C00AE9E39 /* AppDelegate.swift */; };
 		965ED88628CCCC3C00AE9E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965ED88528CCCC3C00AE9E39 /* SceneDelegate.swift */; };
@@ -23,9 +24,13 @@
 		EA9EF6E028CCDDDB00194F49 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EF6DF28CCDDDB00194F49 /* DetailsVC.swift */; };
 		EA9EF6E228CD078400194F49 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EF6E128CD078400194F49 /* CartVC.swift */; };
 		EA9EF6E728CD143600194F49 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EF6E628CD143600194F49 /* CardCell.swift */; };
+		EAB3FE9528CF9C2200FA7BCA /* HomeMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB3FE9428CF9C2200FA7BCA /* HomeMain.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F5E7CAE1E5A56D107587B2E /* Pods_AppClothesProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppClothesProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E488ADDCF5E11366020E0BF /* Pods-AppClothesProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppClothesProject.debug.xcconfig"; path = "Target Support Files/Pods-AppClothesProject/Pods-AppClothesProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9544C9B47ACA3C7D00F0BFAD /* Pods-AppClothesProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppClothesProject.release.xcconfig"; path = "Target Support Files/Pods-AppClothesProject/Pods-AppClothesProject.release.xcconfig"; sourceTree = "<group>"; };
 		96548F8828CE8DB000E8436D /* SignUpLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpLogin.storyboard; sourceTree = "<group>"; };
 		965ED88028CCCC3C00AE9E39 /* AppClothesProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppClothesProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965ED88328CCCC3C00AE9E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		EA9EF6DF28CCDDDB00194F49 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		EA9EF6E128CD078400194F49 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		EA9EF6E628CD143600194F49 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		EAB3FE9428CF9C2200FA7BCA /* HomeMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeMain.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882F430613367AE1CDB20A87 /* Pods_AppClothesProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		566C30AFEB8C4C5942B40F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F5E7CAE1E5A56D107587B2E /* Pods_AppClothesProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D10F0D85F046A9A59FE8912 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E488ADDCF5E11366020E0BF /* Pods-AppClothesProject.debug.xcconfig */,
+				9544C9B47ACA3C7D00F0BFAD /* Pods-AppClothesProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		965ED87728CCCC3C00AE9E39 = {
 			isa = PBXGroup;
 			children = (
 				965ED88228CCCC3C00AE9E39 /* AppClothesProject */,
 				965ED88128CCCC3C00AE9E39 /* Products */,
+				6D10F0D85F046A9A59FE8912 /* Pods */,
+				566C30AFEB8C4C5942B40F9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +103,10 @@
 		965ED88228CCCC3C00AE9E39 /* AppClothesProject */ = {
 			isa = PBXGroup;
 			children = (
+				EAB3FE9328CF9BF500FA7BCA /* Mains */,
 				EA9EF6E528CD10AE00194F49 /* Model */,
-				EA9EF6E428CD109A00194F49 /* New Group1 */,
-				EA9EF6E328CD109500194F49 /* New Group */,
+				EA9EF6E428CD109A00194F49 /* Controller */,
+				EA9EF6E328CD109500194F49 /* Views */,
 				965ED88328CCCC3C00AE9E39 /* AppDelegate.swift */,
 				965ED88528CCCC3C00AE9E39 /* SceneDelegate.swift */,
 				965ED88928CCCC3C00AE9E39 /* Main.storyboard */,
@@ -90,27 +118,26 @@
 			path = AppClothesProject;
 			sourceTree = "<group>";
 		};
-		EA9EF6E328CD109500194F49 /* New Group */ = {
+		EA9EF6E328CD109500194F49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EA9EF6DB28CCD32200194F49 /* ClothesCell.swift */,
 				EA9EF6E628CD143600194F49 /* CardCell.swift */,
 			);
-			path = "New Group";
+			path = Views;
 			sourceTree = "<group>";
 		};
-		EA9EF6E428CD109A00194F49 /* New Group1 */ = {
+		EA9EF6E428CD109A00194F49 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				965ED88728CCCC3C00AE9E39 /* HomeVC.swift */,
 				EA9EF6DF28CCDDDB00194F49 /* DetailsVC.swift */,
 				EA9EF6E128CD078400194F49 /* CartVC.swift */,
-				96548F8828CE8DB000E8436D /* SignUpLogin.storyboard */,
 				9664CF7A28CF6D660002F308 /* MainPage.swift */,
 				9664CF7D28CF6DA60002F308 /* Login.swift */,
 				9664CF8028CF6DC20002F308 /* Sign Up.swift */,
 			);
-			path = "New Group1";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		EA9EF6E528CD10AE00194F49 /* Model */ = {
@@ -121,6 +148,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EAB3FE9328CF9BF500FA7BCA /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				96548F8828CE8DB000E8436D /* SignUpLogin.storyboard */,
+				EAB3FE9428CF9C2200FA7BCA /* HomeMain.storyboard */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 965ED89728CCCC4000AE9E39 /* Build configuration list for PBXNativeTarget "AppClothesProject" */;
 			buildPhases = (
+				0B62B3FE45DB18D7D6368416 /* [CP] Check Pods Manifest.lock */,
 				965ED87C28CCCC3C00AE9E39 /* Sources */,
 				965ED87D28CCCC3C00AE9E39 /* Frameworks */,
 				965ED87E28CCCC3C00AE9E39 /* Resources */,
+				B6D1D43A5256921C6A9136F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB3FE9528CF9C2200FA7BCA /* HomeMain.storyboard in Resources */,
 				96548F8928CE8DB000E8436D /* SignUpLogin.storyboard in Resources */,
 				965ED89328CCCC4000AE9E39 /* LaunchScreen.storyboard in Resources */,
 				965ED89028CCCC4000AE9E39 /* Assets.xcassets in Resources */,
@@ -186,6 +225,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B62B3FE45DB18D7D6368416 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppClothesProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D1D43A5256921C6A9136F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppClothesProject/Pods-AppClothesProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppClothesProject/Pods-AppClothesProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppClothesProject/Pods-AppClothesProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		965ED87C28CCCC3C00AE9E39 /* Sources */ = {
@@ -347,6 +428,7 @@
 		};
 		965ED89828CCCC4000AE9E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E488ADDCF5E11366020E0BF /* Pods-AppClothesProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +447,7 @@
 		};
 		965ED89928CCCC4000AE9E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9544C9B47ACA3C7D00F0BFAD /* Pods-AppClothesProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

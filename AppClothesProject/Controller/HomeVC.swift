@@ -46,7 +46,7 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
           let frameCV = collectionView.frame
           
-          let cellWidth = frameCV.width / CGFloat(2)
+        let cellWidth = 20.0
           let cellHeight = cellWidth
           
           return CGSize(width: cellWidth, height: cellHeight)
