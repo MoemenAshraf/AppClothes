@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TnK-xB-aFB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TnK-xB-aFB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -146,10 +144,9 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC0-ez-FW4">
-                                        <rect key="frame" x="19" y="9" width="45.5" height="31"/>
+                                        <rect key="frame" x="19" y="9" width="46" height="30"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbG-HL-9Z9">
                                         <rect key="frame" x="186" y="13" width="42" height="25.5"/>
@@ -162,7 +159,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardCell" rowHeight="120" id="Zy0-1S-OTP" customClass="CardCell" customModule="AppClothesProject" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="387" height="120"/>
+                                                <rect key="frame" x="0.0" y="28" width="387" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zy0-1S-OTP" id="gQb-pk-83d">
                                                     <rect key="frame" x="0.0" y="0.0" width="387" height="120"/>
@@ -195,7 +192,6 @@
                                                             <rect key="frame" x="321" y="5" width="66" height="31"/>
                                                             <color key="tintColor" systemColor="labelColor"/>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="m.square" catalog="system"/>
                                                         </button>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VIW-XS-Hqt">
                                                             <rect key="frame" x="130" y="82" width="94.5" height="31"/>
@@ -204,7 +200,6 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="2.5" height="31"/>
                                                                     <color key="tintColor" systemColor="labelColor"/>
                                                                     <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="plain" image="minus.circle" catalog="system" title=""/>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlR-t0-lG9">
                                                                     <rect key="frame" x="22.5" y="0.0" width="10" height="31"/>
@@ -221,7 +216,6 @@
                                                                     </constraints>
                                                                     <color key="tintColor" systemColor="labelColor"/>
                                                                     <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system"/>
                                                                 </button>
                                                             </subviews>
                                                             <constraints>
@@ -316,7 +310,6 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Checkout"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -386,10 +379,6 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="backButton:" destination="1IC-LS-toz" eventType="touchUpInside" id="BFl-xy-GYZ"/>
                                         </connections>
@@ -425,9 +414,6 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
                                                         <color key="tintColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <imageReference key="image" image="largecircle.fill.circle" catalog="system" symbolScale="large"/>
-                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="firstColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="rbD-FU-boR"/>
                                                         </connections>
@@ -436,9 +422,6 @@
                                                         <rect key="frame" x="68" y="0.0" width="45" height="50"/>
                                                         <color key="tintColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <imageReference key="image" image="largecircle.fill.circle" catalog="system" symbolScale="large"/>
-                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="secondColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="pq7-aK-gGa"/>
                                                         </connections>
@@ -447,9 +430,6 @@
                                                         <rect key="frame" x="136" y="0.0" width="45" height="50"/>
                                                         <color key="tintColor" red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain">
-                                                            <imageReference key="image" image="largecircle.fill.circle" catalog="system" symbolScale="large"/>
-                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="thirdColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="QQI-5d-7K0"/>
                                                         </connections>
@@ -458,9 +438,6 @@
                                                         <rect key="frame" x="204" y="0.0" width="45" height="50"/>
                                                         <color key="tintColor" red="1" green="0.57647058823529407" blue="0.0" alpha="0.4582629247014256" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="">
-                                                            <imageReference key="image" image="largecircle.fill.circle" catalog="system" symbolScale="large"/>
-                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="fourthColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="107-Gz-Oz7"/>
                                                         </connections>
@@ -486,54 +463,49 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rtp-VY-Nlp">
-                                                <rect key="frame" x="20" y="373" width="292.5" height="31"/>
+                                                <rect key="frame" x="20" y="373" width="310" height="31"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9r-T6-0g2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="XS"/>
                                                         <connections>
                                                             <action selector="firstColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="ZW0-sc-J8c"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCe-KL-aIm">
-                                                        <rect key="frame" x="62.5" y="0.0" width="42.5" height="31"/>
+                                                        <rect key="frame" x="66" y="0.0" width="46" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="S"/>
                                                         <connections>
                                                             <action selector="secondColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="f3q-nq-vFt"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbW-tv-fCE">
-                                                        <rect key="frame" x="125" y="0.0" width="42.5" height="31"/>
+                                                        <rect key="frame" x="132" y="0.0" width="46" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="M"/>
                                                         <connections>
                                                             <action selector="thirdColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="mcd-B1-FJk"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPM-23-D1F">
-                                                        <rect key="frame" x="187.5" y="0.0" width="42.5" height="31"/>
+                                                        <rect key="frame" x="198" y="0.0" width="46" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="L"/>
                                                         <connections>
                                                             <action selector="fourthColor:" destination="1IC-LS-toz" eventType="touchUpInside" id="xxN-F5-F01"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-BB-192">
-                                                        <rect key="frame" x="250" y="0.0" width="42.5" height="31"/>
+                                                        <rect key="frame" x="264" y="0.0" width="46" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="XL"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -545,7 +517,6 @@
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="bag" catalog="system" title="   Add to cart"/>
                                                 <connections>
                                                     <action selector="addToCartButton:" destination="1IC-LS-toz" eventType="touchUpInside" id="ERW-Fp-YkV"/>
                                                 </connections>
@@ -634,6 +605,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TnK-xB-aFB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yaH-Ut-6Ad">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -649,13 +621,6 @@
     </scenes>
     <resources>
         <image name="Photo2" width="452" height="428"/>
-        <image name="arrow.backward" catalog="system" width="128" height="98"/>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
-        <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
-        <image name="m.square" catalog="system" width="128" height="114"/>
-        <image name="minus.circle" catalog="system" width="128" height="121"/>
-        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
