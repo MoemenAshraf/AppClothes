@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     var clothes : [Clothes] = [Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "$ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "$ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "€ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "€ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "€ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "€ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "€ 89.75"),Clothes(image: UIImage(named: "Photo2"), name: "Bamber Jacket", price: "€ 89.75")]
     
+    // MARK :- OUTLET
     
     @IBOutlet weak var clothesCollectionView: UICollectionView!
     

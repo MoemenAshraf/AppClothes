@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,11 @@
 		9664CF7B28CF6D660002F308 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664CF7A28CF6D660002F308 /* MainPage.swift */; };
 		9664CF7E28CF6DA60002F308 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664CF7D28CF6DA60002F308 /* Login.swift */; };
 		9664CF8128CF6DC20002F308 /* Sign Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664CF8028CF6DC20002F308 /* Sign Up.swift */; };
+		EA5CC97428CFBCAA003B3EA4 /* ColourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97328CFBCAA003B3EA4 /* ColourCell.swift */; };
+		EA5CC97628CFC15B003B3EA4 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97528CFC15B003B3EA4 /* SizeCell.swift */; };
+		EA6C084F28CFA81E000E2768 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C084E28CFA81E000E2768 /* API.swift */; };
+		EA6C085128CFA8A3000E2768 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C085028CFA8A3000E2768 /* User.swift */; };
+		EA7A66BD28CFA5C500758829 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A66BC28CFA5C500758829 /* UserAPI.swift */; };
 		EA9EF6DC28CCD32200194F49 /* ClothesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EF6DB28CCD32200194F49 /* ClothesCell.swift */; };
 		EA9EF6DE28CCD34300194F49 /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EF6DD28CCD34300194F49 /* Clothes.swift */; };
 		EA9EF6E028CCDDDB00194F49 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EF6DF28CCDDDB00194F49 /* DetailsVC.swift */; };
@@ -44,6 +49,11 @@
 		9664CF7A28CF6D660002F308 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		9664CF7D28CF6DA60002F308 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9664CF8028CF6DC20002F308 /* Sign Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up.swift"; sourceTree = "<group>"; };
+		EA5CC97328CFBCAA003B3EA4 /* ColourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourCell.swift; sourceTree = "<group>"; };
+		EA5CC97528CFC15B003B3EA4 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
+		EA6C084E28CFA81E000E2768 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EA6C085028CFA8A3000E2768 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EA7A66BC28CFA5C500758829 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		EA9EF6DB28CCD32200194F49 /* ClothesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesCell.swift; sourceTree = "<group>"; };
 		EA9EF6DD28CCD34300194F49 /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
 		EA9EF6DF28CCDDDB00194F49 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
@@ -78,7 +88,6 @@
 				5E488ADDCF5E11366020E0BF /* Pods-AppClothesProject.debug.xcconfig */,
 				9544C9B47ACA3C7D00F0BFAD /* Pods-AppClothesProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,19 +112,27 @@
 		965ED88228CCCC3C00AE9E39 /* AppClothesProject */ = {
 			isa = PBXGroup;
 			children = (
+				EA7A66BB28CFA4ED00758829 /* Networking */,
 				EAB3FE9328CF9BF500FA7BCA /* Mains */,
 				EA9EF6E528CD10AE00194F49 /* Model */,
 				EA9EF6E428CD109A00194F49 /* Controller */,
 				EA9EF6E328CD109500194F49 /* Views */,
 				965ED88328CCCC3C00AE9E39 /* AppDelegate.swift */,
 				965ED88528CCCC3C00AE9E39 /* SceneDelegate.swift */,
-				965ED88928CCCC3C00AE9E39 /* Main.storyboard */,
 				965ED88F28CCCC4000AE9E39 /* Assets.xcassets */,
-				965ED89128CCCC4000AE9E39 /* LaunchScreen.storyboard */,
 				965ED89428CCCC4000AE9E39 /* Info.plist */,
 				965ED88C28CCCC3C00AE9E39 /* AppClothesProject.xcdatamodeld */,
 			);
 			path = AppClothesProject;
+			sourceTree = "<group>";
+		};
+		EA7A66BB28CFA4ED00758829 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EA7A66BC28CFA5C500758829 /* UserAPI.swift */,
+				EA6C084E28CFA81E000E2768 /* API.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		EA9EF6E328CD109500194F49 /* Views */ = {
@@ -123,6 +140,8 @@
 			children = (
 				EA9EF6DB28CCD32200194F49 /* ClothesCell.swift */,
 				EA9EF6E628CD143600194F49 /* CardCell.swift */,
+				EA5CC97328CFBCAA003B3EA4 /* ColourCell.swift */,
+				EA5CC97528CFC15B003B3EA4 /* SizeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9EF6DD28CCD34300194F49 /* Clothes.swift */,
+				EA6C085028CFA8A3000E2768 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +171,8 @@
 		EAB3FE9328CF9BF500FA7BCA /* Mains */ = {
 			isa = PBXGroup;
 			children = (
+				965ED89128CCCC4000AE9E39 /* LaunchScreen.storyboard */,
+				965ED88928CCCC3C00AE9E39 /* Main.storyboard */,
 				96548F8828CE8DB000E8436D /* SignUpLogin.storyboard */,
 				EAB3FE9428CF9C2200FA7BCA /* HomeMain.storyboard */,
 			);
@@ -279,12 +301,17 @@
 				965ED88828CCCC3C00AE9E39 /* HomeVC.swift in Sources */,
 				EA9EF6DC28CCD32200194F49 /* ClothesCell.swift in Sources */,
 				9664CF7B28CF6D660002F308 /* MainPage.swift in Sources */,
+				EA6C084F28CFA81E000E2768 /* API.swift in Sources */,
+				EA7A66BD28CFA5C500758829 /* UserAPI.swift in Sources */,
+				EA6C085128CFA8A3000E2768 /* User.swift in Sources */,
 				EA9EF6E028CCDDDB00194F49 /* DetailsVC.swift in Sources */,
 				965ED88428CCCC3C00AE9E39 /* AppDelegate.swift in Sources */,
 				965ED88628CCCC3C00AE9E39 /* SceneDelegate.swift in Sources */,
 				9664CF7E28CF6DA60002F308 /* Login.swift in Sources */,
+				EA5CC97628CFC15B003B3EA4 /* SizeCell.swift in Sources */,
 				9664CF8128CF6DC20002F308 /* Sign Up.swift in Sources */,
 				EA9EF6E728CD143600194F49 /* CardCell.swift in Sources */,
+				EA5CC97428CFBCAA003B3EA4 /* ColourCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

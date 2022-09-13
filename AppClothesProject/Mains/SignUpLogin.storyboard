@@ -10,14 +10,24 @@
     </dependencies>
     <scenes>
         <!--MainPage-->
-        <scene sceneID="nno-5u-3Te">
+        <scene sceneID="qsh-UJ-1os">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainPage" id="Vkg-0O-97l" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="SXh-Zw-S8l"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainPage" id="IQF-T9-U5P" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="H1c-if-kBy"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xHH-Dx-yKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMU-EY-VVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-456" y="-165"/>
+            <point key="canvasLocation" x="-491" y="-154"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="B1v-Pa-9Qc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeMain" referencedIdentifier="HomeVC" id="BDR-ko-apu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XEX-Gt-69c"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67q-vc-YiH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-570" y="123"/>
         </scene>
         <!--Title-->
         <scene sceneID="1sN-T0-QMi">
@@ -77,6 +87,10 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInButton:" destination="9mv-5f-rYw" eventType="touchUpInside" id="lNS-Fp-t1N"/>
+                                    <segue destination="BDR-ko-apu" kind="show" id="IVi-7O-cB9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5B-Nb-5FZ">
                                 <rect key="frame" x="60" y="601" width="195" height="21"/>
@@ -105,8 +119,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButton:" destination="9mv-5f-rYw" eventType="touchUpInside" id="r83-DM-Vkp"/>
-                                    <segue destination="Vkg-0O-97l" kind="show" id="5NN-98-NDM"/>
+                                    <segue destination="IQF-T9-U5P" kind="show" id="7di-cJ-cm5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -252,7 +265,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vkg-0O-97l" kind="show" id="xS0-On-xbk"/>
+                                    <segue destination="IQF-T9-U5P" kind="show" id="T2g-ce-DfP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qn0-MJ-HCo">
@@ -304,6 +317,7 @@
                         <outlet property="emailAdressSignUpTextField" destination="LQ0-Pq-enM" id="BKF-hV-PCr"/>
                         <outlet property="nameSignUpTextField" destination="1kF-F4-GSS" id="ReX-Pf-8X6"/>
                         <outlet property="reTypePasswordTextField" destination="vm6-vy-EsI" id="oyd-QE-H7c"/>
+                        <outlet property="signUpOutlet" destination="E8g-Tb-kCL" id="wKT-H3-VAk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Xn-tE-lDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -312,8 +326,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FQz-LT-2DA"/>
-        <segue reference="xS0-On-xbk"/>
+        <segue reference="QdF-Yt-qAl"/>
+        <segue reference="7di-cJ-cm5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

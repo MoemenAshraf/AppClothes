@@ -7,4 +7,5 @@ target 'AppClothesProject' do
 
   # Pods for AppClothesProject
   pod 'Alamofire'
+pod 'SwiftyJSON', '~> 4.0'
 end

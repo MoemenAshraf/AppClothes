@@ -12,3 +12,9 @@ struct Clothes {
     var name : String?
     var price : String?
 }
+struct Colour {
+    var colour : UIColor?
+}
+struct Size {
+    var size : String?
+}

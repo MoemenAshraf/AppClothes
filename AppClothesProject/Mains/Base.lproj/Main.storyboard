@@ -12,7 +12,6 @@
         <!--Main Page-->
         <scene sceneID="9oz-0X-l6Y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jxY-tl-ig5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MainPage" modalPresentationStyle="fullScreen" id="yG8-5c-t3R" customClass="MainPage" customModule="AppClothesProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEt-5T-gBd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -114,8 +113,9 @@
                         <outlet property="LoginButton" destination="emQ-hG-uFP" id="X2j-He-GlW"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxY-tl-ig5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-67" y="427"/>
+            <point key="canvasLocation" x="-67" y="432"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="gnJ-Un-lBs">

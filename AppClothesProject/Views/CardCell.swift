@@ -11,17 +11,17 @@ class CardCell: UITableViewCell {
     
     @IBOutlet weak var minusButtonOutlet: UIButton!{
         didSet {
-            minusButtonOutlet.titleLabel?.isHidden = true
+            minusButtonOutlet.setTitle("", for: .normal)
         }
     }
     @IBOutlet weak var plusButtonOutlet: UIButton!{
         didSet {
-            plusButtonOutlet.titleLabel?.isHidden = true
+            plusButtonOutlet.setTitle("", for: .normal)
         }
     }
     @IBOutlet weak var sizeButtonOutlet: UIButton!{
         didSet {
-            sizeButtonOutlet.titleLabel?.isHidden = true
+            sizeButtonOutlet.setTitle("", for: .normal)
         }
     }
     @IBOutlet weak var imageCart: UIImageView!{

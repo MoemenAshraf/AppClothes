@@ -14,6 +14,11 @@ class Sign_Up: UIViewController {
     @IBOutlet weak var emailAdressSignUpTextField: UITextField!
     @IBOutlet weak var PasswordSignUpTextField: UITextField!
     @IBOutlet weak var reTypePasswordTextField: UITextField!
+    @IBOutlet weak var signUpOutlet: UIButton!{
+        didSet {
+            signUpOutlet.layer.cornerRadius = 10
+        }
+    }
     
 
     override func viewDidLoad() {
@@ -23,6 +28,9 @@ class Sign_Up: UIViewController {
     
     // MARK :- ACTIONS
     @IBAction func signUpButton(_ sender: Any) {
+        
+        
+        
     }
     
 

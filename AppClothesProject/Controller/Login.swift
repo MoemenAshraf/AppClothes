@@ -29,6 +29,10 @@ class Login: UIViewController {
 
 
     @IBAction func logInButton(_ sender: Any) {
+        
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+//        navigationController?.present(vc!, animated: true)
+        
     }
     
 
