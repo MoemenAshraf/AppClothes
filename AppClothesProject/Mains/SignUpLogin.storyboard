@@ -19,16 +19,6 @@
             </objects>
             <point key="canvasLocation" x="-491" y="-154"/>
         </scene>
-        <!--HomeVC-->
-        <scene sceneID="B1v-Pa-9Qc">
-            <objects>
-                <viewControllerPlaceholder storyboardName="HomeMain" referencedIdentifier="HomeVC" id="BDR-ko-apu" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="XEX-Gt-69c"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="67q-vc-YiH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-570" y="123"/>
-        </scene>
         <!--Title-->
         <scene sceneID="1sN-T0-QMi">
             <objects>
@@ -89,7 +79,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logInButton:" destination="9mv-5f-rYw" eventType="touchUpInside" id="lNS-Fp-t1N"/>
-                                    <segue destination="BDR-ko-apu" kind="show" id="IVi-7O-cB9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5B-Nb-5FZ">

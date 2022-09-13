@@ -28,8 +28,34 @@ class Sign_Up: UIViewController {
     
     // MARK :- ACTIONS
     @IBAction func signUpButton(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "HomeMain", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+        self.present(vc, animated: true)
         
+        if PasswordSignUpTextField.text == reTypePasswordTextField.text {
+            
+            UserAPI.registerNewUser(name: nameSignUpTextField.text!, email: emailAdressSignUpTextField.text!, password: PasswordSignUpTextField.text!){ (user, errorMessage) in
+                if errorMessage != nil {
+                    let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                }else{
+                    let alert = UIAlertController(title: "Success", message: "User Created", preferredStyle: .alert)
+                                   let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                   alert.addAction(okAction)
+                                   self.present(alert, animated: true, completion: nil)
+                    
+                   
+                }
+            }
+        }else {
+            let alert = UIAlertController(title: "Error", message: "Password Doesn't Match", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+        }
         
+     
         
     }
     

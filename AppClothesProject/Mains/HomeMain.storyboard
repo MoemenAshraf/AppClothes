@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="60d-WO-Zig">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -124,7 +124,7 @@
                             <constraint firstAttribute="trailing" secondItem="vYh-Cy-1pE" secondAttribute="trailing" id="ux6-IY-tmZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Our Products" id="sfr-8r-xUY"/>
+                    <tabBarItem key="tabBarItem" title="Our Products" image="homekit" catalog="system" id="sfr-8r-xUY"/>
                     <connections>
                         <outlet property="clothesCollectionView" destination="wKA-LV-XOf" id="Anc-iJ-NwA"/>
                     </connections>
@@ -204,6 +204,9 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="42.5" height="31"/>
                                                                     <color key="tintColor" systemColor="labelColor"/>
                                                                     <state key="normal" image="minus.circle" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="minusButton:" destination="Qsw-PE-g0v" eventType="touchUpInside" id="S0E-IR-bmi"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSP-eX-X4v">
                                                                     <rect key="frame" x="42.5" y="0.0" width="10" height="31"/>
@@ -220,6 +223,9 @@
                                                                     </constraints>
                                                                     <color key="tintColor" systemColor="labelColor"/>
                                                                     <state key="normal" image="plus.circle" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="plusButton:" destination="Qsw-PE-g0v" eventType="touchUpInside" id="i2w-De-Lpb"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <constraints>
@@ -349,7 +355,7 @@
                             <constraint firstItem="q9l-jT-DY2" firstAttribute="bottom" secondItem="ZcA-QP-faM" secondAttribute="bottom" constant="23" id="w9H-Ig-wbc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cart" id="hIP-1F-rdk"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="hIP-1F-rdk"/>
                     <connections>
                         <outlet property="backButton" destination="ZL1-p4-xNB" id="eKP-fP-ZBm"/>
                         <outlet property="cartTable" destination="irb-Fs-sZy" id="Ach-b7-8R2"/>
@@ -359,6 +365,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buZ-JD-a55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="783.48214285714278"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="X5c-Vt-yNz">
+            <objects>
+                <viewController id="qz0-Dh-6z4" customClass="ProfileVC" customModule="AppClothesProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1yu-vI-D6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuT-mS-Wan">
+                                <rect key="frame" x="20" y="131.5" width="374" height="448"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-CW-DiB">
+                                        <rect key="frame" x="109" y="31" width="156" height="155"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="OL3-4K-vb6"/>
+                                            <constraint firstAttribute="width" secondItem="d3l-CW-DiB" secondAttribute="height" multiplier="1:1" constant="1" id="uWJ-FX-hd7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi there Omar!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PT-zM-8XZ">
+                                        <rect key="frame" x="109" y="211" width="156" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPr-Eu-LXH">
+                                        <rect key="frame" x="110" y="375" width="156" height="46"/>
+                                        <color key="backgroundColor" red="0.92888742685317993" green="0.51490586996078491" blue="0.1106819286942482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="1ez-tq-AyY"/>
+                                            <constraint firstAttribute="height" constant="46" id="PNG-qA-ddP"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButton:" destination="qz0-Dh-6z4" eventType="touchUpInside" id="QRb-it-tcG"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-na-SaD">
+                                        <rect key="frame" x="55" y="287" width="265" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="omartharwat518@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-XV-Dd3">
+                                                <rect key="frame" x="7" y="12" width="250" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstItem="t6V-XV-Dd3" firstAttribute="centerY" secondItem="4EG-na-SaD" secondAttribute="centerY" id="YVD-AD-dg3"/>
+                                            <constraint firstItem="t6V-XV-Dd3" firstAttribute="centerX" secondItem="4EG-na-SaD" secondAttribute="centerX" constant="-0.5" id="usq-fT-cON"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PPr-Eu-LXH" firstAttribute="top" secondItem="4EG-na-SaD" secondAttribute="bottom" constant="41" id="2cD-eq-yqr"/>
+                                    <constraint firstItem="d3l-CW-DiB" firstAttribute="leading" secondItem="zuT-mS-Wan" secondAttribute="leading" constant="109" id="2x7-R3-b2J"/>
+                                    <constraint firstItem="PPr-Eu-LXH" firstAttribute="leading" secondItem="zuT-mS-Wan" secondAttribute="leading" constant="110" id="5Vw-9W-9ww"/>
+                                    <constraint firstItem="d3l-CW-DiB" firstAttribute="top" secondItem="zuT-mS-Wan" secondAttribute="top" constant="31" id="6kp-jq-VgB"/>
+                                    <constraint firstAttribute="trailing" secondItem="PPr-Eu-LXH" secondAttribute="trailing" constant="108" id="Jwe-ok-Ey1"/>
+                                    <constraint firstItem="4EG-na-SaD" firstAttribute="leading" secondItem="zuT-mS-Wan" secondAttribute="leading" constant="55" id="Ot3-TB-8Hf"/>
+                                    <constraint firstAttribute="trailing" secondItem="d3l-CW-DiB" secondAttribute="trailing" constant="109" id="P88-Bb-OVz"/>
+                                    <constraint firstAttribute="bottom" secondItem="PPr-Eu-LXH" secondAttribute="bottom" constant="27" id="XRm-bz-vNk"/>
+                                    <constraint firstItem="4EG-na-SaD" firstAttribute="top" secondItem="4PT-zM-8XZ" secondAttribute="bottom" constant="21" id="aPO-wa-tO2"/>
+                                    <constraint firstItem="4PT-zM-8XZ" firstAttribute="top" secondItem="d3l-CW-DiB" secondAttribute="bottom" constant="25" id="aoX-vY-Th3"/>
+                                    <constraint firstItem="4PT-zM-8XZ" firstAttribute="leading" secondItem="zuT-mS-Wan" secondAttribute="leading" constant="109" id="bth-Lc-PdP"/>
+                                    <constraint firstItem="4PT-zM-8XZ" firstAttribute="height" secondItem="d3l-CW-DiB" secondAttribute="height" multiplier="0.356061" id="f2H-DF-8RQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="4PT-zM-8XZ" secondAttribute="trailing" constant="109" id="pJX-J0-efD"/>
+                                    <constraint firstAttribute="trailing" secondItem="4EG-na-SaD" secondAttribute="trailing" constant="54" id="vBK-VX-nQg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZIv-ky-HIr"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="ZIv-ky-HIr" firstAttribute="trailing" secondItem="zuT-mS-Wan" secondAttribute="trailing" constant="20" id="Jfg-PF-nKm"/>
+                            <constraint firstItem="zuT-mS-Wan" firstAttribute="centerY" secondItem="ZIv-ky-HIr" secondAttribute="centerY" constant="-73" id="X4N-pV-K1Z"/>
+                            <constraint firstItem="zuT-mS-Wan" firstAttribute="centerX" secondItem="ZIv-ky-HIr" secondAttribute="centerX" id="XQV-pv-c7T"/>
+                            <constraint firstItem="zuT-mS-Wan" firstAttribute="leading" secondItem="ZIv-ky-HIr" secondAttribute="leading" constant="20" id="iE3-Cr-CVY"/>
+                            <constraint firstItem="zuT-mS-Wan" firstAttribute="height" secondItem="1yu-vI-D6Y" secondAttribute="height" multiplier="0.5" id="za1-tl-ZoL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="qfR-Xu-Tff"/>
+                    <connections>
+                        <outlet property="emailView" destination="4EG-na-SaD" id="NRd-ry-FN4"/>
+                        <outlet property="logoutOutlet" destination="PPr-Eu-LXH" id="Ljd-5L-p5O"/>
+                        <outlet property="profileCardView" destination="zuT-mS-Wan" id="bHr-gp-rkE"/>
+                        <outlet property="userEmail" destination="t6V-XV-Dd3" id="EN6-wX-UW6"/>
+                        <outlet property="userImage" destination="d3l-CW-DiB" id="Jgi-CF-DFK"/>
+                        <outlet property="userName" destination="4PT-zM-8XZ" id="oGW-CP-mDH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gM-HO-jER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="782.8125"/>
         </scene>
         <!--DetailsVC-->
         <scene sceneID="B1a-JU-pUY">
@@ -592,29 +697,35 @@
         <!--Tab Bar Controller-->
         <scene sceneID="gUf-Jp-JCk">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="60d-WO-Zig" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="60d-WO-Zig" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0gd-ZQ-GCi">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemYellowColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="ckB-bk-jbb" kind="relationship" relationship="viewControllers" id="SPj-8y-Gkz"/>
                         <segue destination="77Z-zN-4Yn" kind="relationship" relationship="viewControllers" id="rof-7i-Gvr"/>
+                        <segue destination="qz0-Dh-6z4" kind="relationship" relationship="viewControllers" id="lOt-kv-lLu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZVj-dn-vyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+            <point key="canvasLocation" x="132" y="115"/>
         </scene>
     </scenes>
     <resources>
         <image name="Photo2" width="452" height="428"/>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="m.square" catalog="system" width="128" height="114"/>
         <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="person" width="500" height="500"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -627,6 +738,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

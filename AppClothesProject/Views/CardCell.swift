@@ -9,6 +9,10 @@ import UIKit
 
 class CardCell: UITableViewCell {
     
+    var count = 1
+    
+    // MARK :- OUTLET
+    
     @IBOutlet weak var minusButtonOutlet: UIButton!{
         didSet {
             minusButtonOutlet.setTitle("", for: .normal)
@@ -56,5 +60,23 @@ class CardCell: UITableViewCell {
 
        
     }
+    
+        // MARK :- ACTIONS
+    
+    @IBAction func plusButton(_ sender: Any) {
+        count += 1
+        countLabel.text = String(count)
+    }
+    @IBAction func minusButton(_ sender: Any) {
+        if count > 0 {
+            count -= 1
+            countLabel.text = String(count)
+        } else if count == 0 {
+            count = 0
+            countLabel.text = String(count)
+        }
+       
+    }
+    
 
 }

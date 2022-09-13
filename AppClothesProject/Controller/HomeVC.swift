@@ -44,15 +44,15 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
         
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-          let frameCV = collectionView.frame
-          
-        let cellWidth = 20.0
-          let cellHeight = cellWidth
-          
-          return CGSize(width: cellWidth, height: cellHeight)
-
-      }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//          let frameCV = collectionView.frame
+//
+//        let cellWidth = 20.0
+//          let cellHeight = cellWidth
+//
+//          return CGSize(width: cellWidth, height: cellHeight)
+//
+//      }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as! DetailsVC
         vc.imageToShow = clothes[indexPath.row].image!
