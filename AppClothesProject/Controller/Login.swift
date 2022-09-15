@@ -25,6 +25,8 @@ class Login: UIViewController {
 
     }
     
+
+    
     //  MARK :- ACTIONS
 
 
@@ -34,19 +36,16 @@ class Login: UIViewController {
         
         self.present(vc, animated: true)
         
-        UserAPI.signInUser(email: emailLogInTextField.text!, password: passwordLogInTextField.text!)  { (user, errorMessage) in
-            if let message = errorMessage {
-                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
-            }
+
+        
+        
+
         }
             
         
         }
         
-    }
+    
     
 
 

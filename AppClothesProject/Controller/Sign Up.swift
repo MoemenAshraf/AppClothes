@@ -9,6 +9,7 @@ import UIKit
 
 class Sign_Up: UIViewController {
     
+    
     // MARK :- OUTLETS
     @IBOutlet weak var nameSignUpTextField: UITextField!
     @IBOutlet weak var emailAdressSignUpTextField: UITextField!
@@ -28,37 +29,29 @@ class Sign_Up: UIViewController {
     
     // MARK :- ACTIONS
     @IBAction func signUpButton(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "HomeMain", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-        self.present(vc, animated: true)
-        
-        if PasswordSignUpTextField.text == reTypePasswordTextField.text {
+
+        if (PasswordSignUpTextField.text == reTypePasswordTextField.text) {
+            var user = UserRegister(name: nameSignUpTextField.text, email: emailAdressSignUpTextField.text, password: PasswordSignUpTextField.text)
             
-            UserAPI.registerNewUser(name: nameSignUpTextField.text!, email: emailAdressSignUpTextField.text!, password: PasswordSignUpTextField.text!){ (user, errorMessage) in
-                if errorMessage != nil {
-                    let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
-                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                    alert.addAction(okAction)
-                    self.present(alert, animated: true, completion: nil)
-                }else{
+            UserAPI.createUser(register: user) { sucsess, error in
+                if sucsess {
                     let alert = UIAlertController(title: "Success", message: "User Created", preferredStyle: .alert)
-                                   let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                                   alert.addAction(okAction)
-                                   self.present(alert, animated: true, completion: nil)
-                    
-                   
+                       let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                       alert.addAction(okAction)
+                       self.present(alert, animated: true, completion: nil)
+                }else{
+                    let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+                                 let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                 alert.addAction(okAction)
+                                 self.present(alert, animated: true, completion: nil)
                 }
-            }
-        }else {
-            let alert = UIAlertController(title: "Error", message: "Password Doesn't Match", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(action)
-        }
-        
-     
+                
+            } }else {
+                            let alert = UIAlertController(title: "Error", message: "Password Doesn't Match", preferredStyle: .alert)
+                            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+                            alert.addAction(action)
+                            self.present(alert, animated: true)
+                        }
         
     }
-    
-
-
-}
+    }

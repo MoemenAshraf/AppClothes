@@ -10,13 +10,15 @@ import UIKit
 
 class DetailsVC: UIViewController {
     
+    var clothId : Int!
+    
     var lastIndexActive:IndexPath = [1 ,0]
     
     var colours : [Colour] = [Colour(colour: UIColor.lightGray),Colour( colour: UIColor.orange ), Colour(colour: UIColor.blue) ,Colour( colour: UIColor.green)]
-    
+
     var sizes : [Size] = [Size(size: "XS"),Size(size: "S"),Size(size: "M"),Size(size: "L"),Size(size: "XL")]
     
-    var imageToShow = UIImage()
+    var imageToShow = UIImageView()
     var nameToShow = String()
     var priceToShow = String()
     
@@ -48,7 +50,11 @@ class DetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        imageDetails.image = imageToShow.image
+        nameOfClothes.text = nameToShow
+        priceOfClothes.text = priceToShow
+        
+        
         
         coloursCollectionView.dataSource = self
         coloursCollectionView.delegate = self
@@ -56,10 +62,6 @@ class DetailsVC: UIViewController {
         sizesCollectionView.dataSource = self
         sizesCollectionView.delegate = self
         
-        imageDetails.image = imageToShow
-        priceOfClothes.text = priceToShow
-        nameOfClothes.text = nameToShow
-
         
     }
     
@@ -67,9 +69,10 @@ class DetailsVC: UIViewController {
     
 
     @IBAction func addToCartButton(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "CartVC")
-        vc?.modalPresentationStyle = .fullScreen
-        present(vc!, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "CartVC") as! CartVC
+//        vc.carts.append(Clothes(image: imageToShow, name: nameToShow, price: priceToShow))
+//        vc.modalPresentationStyle = .fullScreen
+//        present(vc, animated: true)
         
     }
     @IBAction func backButtonDetails(_ sender: Any) {
@@ -89,7 +92,7 @@ extension DetailsVC : UICollectionViewDelegate , UICollectionViewDataSource {
         }else {
             return sizes.count
         }
-        
+    
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -19,9 +19,11 @@
 		9664CF7B28CF6D660002F308 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664CF7A28CF6D660002F308 /* MainPage.swift */; };
 		9664CF7E28CF6DA60002F308 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664CF7D28CF6DA60002F308 /* Login.swift */; };
 		9664CF8128CF6DC20002F308 /* Sign Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9664CF8028CF6DC20002F308 /* Sign Up.swift */; };
+		EA2023A928D2491C00566E1A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2023A828D2491B00566E1A /* Extension.swift */; };
 		EA5CC97428CFBCAA003B3EA4 /* ColourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97328CFBCAA003B3EA4 /* ColourCell.swift */; };
 		EA5CC97628CFC15B003B3EA4 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97528CFC15B003B3EA4 /* SizeCell.swift */; };
 		EA5CC97828D0BFCD003B3EA4 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97728D0BFCD003B3EA4 /* ProfileVC.swift */; };
+		EA5CC97A28D0F0C1003B3EA4 /* ClothesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97928D0F0C1003B3EA4 /* ClothesAPI.swift */; };
 		EA6C084F28CFA81E000E2768 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C084E28CFA81E000E2768 /* API.swift */; };
 		EA6C085128CFA8A3000E2768 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C085028CFA8A3000E2768 /* User.swift */; };
 		EA7A66BD28CFA5C500758829 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A66BC28CFA5C500758829 /* UserAPI.swift */; };
@@ -50,9 +52,11 @@
 		9664CF7A28CF6D660002F308 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		9664CF7D28CF6DA60002F308 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9664CF8028CF6DC20002F308 /* Sign Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up.swift"; sourceTree = "<group>"; };
+		EA2023A828D2491B00566E1A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EA5CC97328CFBCAA003B3EA4 /* ColourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourCell.swift; sourceTree = "<group>"; };
 		EA5CC97528CFC15B003B3EA4 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
 		EA5CC97728D0BFCD003B3EA4 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		EA5CC97928D0F0C1003B3EA4 /* ClothesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesAPI.swift; sourceTree = "<group>"; };
 		EA6C084E28CFA81E000E2768 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EA6C085028CFA8A3000E2768 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EA7A66BC28CFA5C500758829 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		965ED88228CCCC3C00AE9E39 /* AppClothesProject */ = {
 			isa = PBXGroup;
 			children = (
+				EA2023A728D248F000566E1A /* Utilities */,
 				EA7A66BB28CFA4ED00758829 /* Networking */,
 				EAB3FE9328CF9BF500FA7BCA /* Mains */,
 				EA9EF6E528CD10AE00194F49 /* Model */,
@@ -128,9 +133,18 @@
 			path = AppClothesProject;
 			sourceTree = "<group>";
 		};
+		EA2023A728D248F000566E1A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EA2023A828D2491B00566E1A /* Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		EA7A66BB28CFA4ED00758829 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				EA5CC97928D0F0C1003B3EA4 /* ClothesAPI.swift */,
 				EA7A66BC28CFA5C500758829 /* UserAPI.swift */,
 				EA6C084E28CFA81E000E2768 /* API.swift */,
 			);
@@ -301,6 +315,7 @@
 				EA9EF6DE28CCD34300194F49 /* Clothes.swift in Sources */,
 				965ED88E28CCCC3C00AE9E39 /* AppClothesProject.xcdatamodeld in Sources */,
 				EA9EF6E228CD078400194F49 /* CartVC.swift in Sources */,
+				EA5CC97A28D0F0C1003B3EA4 /* ClothesAPI.swift in Sources */,
 				965ED88828CCCC3C00AE9E39 /* HomeVC.swift in Sources */,
 				EA9EF6DC28CCD32200194F49 /* ClothesCell.swift in Sources */,
 				9664CF7B28CF6D660002F308 /* MainPage.swift in Sources */,
@@ -312,6 +327,7 @@
 				965ED88628CCCC3C00AE9E39 /* SceneDelegate.swift in Sources */,
 				EA5CC97828D0BFCD003B3EA4 /* ProfileVC.swift in Sources */,
 				9664CF7E28CF6DA60002F308 /* Login.swift in Sources */,
+				EA2023A928D2491C00566E1A /* Extension.swift in Sources */,
 				EA5CC97628CFC15B003B3EA4 /* SizeCell.swift in Sources */,
 				9664CF8128CF6DC20002F308 /* Sign Up.swift in Sources */,
 				EA9EF6E728CD143600194F49 /* CardCell.swift in Sources */,

@@ -7,8 +7,16 @@
 
 import Foundation
 
-struct User  : Decodable{
-    var name : String?
-    var email : String?
-    var Password : String?
+
+
+struct UserRegister : Codable {
+    let name, email, password : String?
 }
+
+
+struct UserLogIn : Codable {
+    let email, password : String?
+}
+
+
+

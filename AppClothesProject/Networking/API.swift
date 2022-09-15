@@ -9,7 +9,7 @@ import Foundation
 
 class API {
     
-    static let baseURL = ""
+    static let baseURL = "https://clothesapplication.herokuapp.com"
 
 
 }

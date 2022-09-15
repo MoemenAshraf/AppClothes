@@ -9,10 +9,10 @@ import UIKit
 
 class CartVC: UIViewController {
     
-    var carts : [Clothes] = [Clothes(image: UIImage(named: "Photo2"), name: "Purple Outfit Set", price: "$110"),Clothes(image: UIImage(named: "Photo2"), name: "Purple Outfit Set", price: "$110"),Clothes(image: UIImage(named: "Photo2"), name: "Purple Outfit Set", price: "$110")]
-    
-    // MARK :- OUTLETS
+    var carts : [ClothesCart] = [ClothesCart(image: UIImage(named: "Photo2"), name: "Purple Outfit Set", price: "$110"),ClothesCart(image: UIImage(named: "Photo2"), name: "Purple Outfit Set", price: "$110"),ClothesCart(image: UIImage(named: "Photo2"), name: "Purple Outfit Set", price: "$110")
+        ]
 
+ //   MARK :- OUTLETS
     @IBOutlet weak var cartTable: UITableView!
     @IBOutlet weak var backButton: UIButton!{
         didSet {
